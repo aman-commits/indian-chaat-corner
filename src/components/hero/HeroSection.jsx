@@ -20,7 +20,10 @@ export default function HeroSection({ onExplore }) {
   // Helper to get formatted filename
   const getFrameUrl = (index) => {
     const frameNum = String(index + 1).padStart(3, '0');
-    return `/assets/hero-frames/ezgif-frame-${frameNum}.jpg`;
+    const base = import.meta.env.BASE_URL.endsWith('/')
+      ? import.meta.env.BASE_URL
+      : `${import.meta.env.BASE_URL}/`;
+    return `${base}assets/hero-frames/ezgif-frame-${frameNum}.jpg`;
   };
 
   // Draw frame on canvas with crisp aspect-fit rendering

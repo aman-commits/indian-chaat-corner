@@ -1,3 +1,5 @@
+const base = (import.meta.env?.BASE_URL || '/').replace(/\/?$/, '/');
+
 export const dishesData = [
   {
     id: 'vada-pav',
@@ -14,7 +16,7 @@ export const dishesData = [
       'Blistered Green Chilli',
     ],
     accentColor: '#D96B27',
-    image: '/assets/food/vada-pav.png',
+    image: `${base}assets/food/vada-pav.png`,
     fallbackEmoji: '🍔',
     details: {
       origin: 'Mumbai, Maharashtra',
@@ -37,7 +39,7 @@ export const dishesData = [
       'Slow-Cooked Green Peas',
     ],
     accentColor: '#CBA258',
-    image: '/assets/food/samosa.png',
+    image: `${base}assets/food/samosa.png`,
     fallbackEmoji: '🥟',
     details: {
       origin: 'Ancient Delhi Guilds',
@@ -60,7 +62,7 @@ export const dishesData = [
       'Gossamer Semolina Spheres',
     ],
     accentColor: '#2A7A4C',
-    image: '/assets/food/pani-puri.png',
+    image: `${base}assets/food/pani-puri.png`,
     fallbackEmoji: '🫧',
     details: {
       origin: 'Banaras & Old Magadha',
@@ -83,7 +85,7 @@ export const dishesData = [
       'Pure Butter Tawa Roast',
     ],
     accentColor: '#E68A35',
-    image: '/assets/food/dosa.png',
+    image: `${base}assets/food/dosa.png`,
     fallbackEmoji: '🥞',
     details: {
       origin: 'Udupi, Karnataka',
